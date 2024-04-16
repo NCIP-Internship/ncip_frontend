@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 const MainLayout = ({ children }: { children: ReactNode }) => {
   return (
-    <main>
+    <main className="flex flex-col w-screen h-screen text-center">
       {children}
     </main>
   );
