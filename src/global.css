@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   body {
     @apply bg-slate-900 text-white;
   }
+} */
+
+body {
+  background-color: rgb(167, 167, 167);
 }
