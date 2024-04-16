@@ -1,3 +1,4 @@
+import Navbar from "@/components/Header/Navbar";
 
 import {
   Carousel,
@@ -19,6 +20,7 @@ const LandingPage = () => {
   
   return (
     <>
+    <Navbar />
 
       <header className="flex w-screen h-screen items-center justify-center">
         <CarouselComponent />
