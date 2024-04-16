@@ -1,3 +1,4 @@
+
 import {
   Carousel,
   CarouselContent,
@@ -9,13 +10,24 @@ import { useRef } from "react"
 import Autoplay from "embla-carousel-autoplay"
 import { Button } from "@/components/ui/button";
 
+import FAQs from "@/components/Templates/FAQs";
+import Streamlined from "@/components/Templates/Streamlined";
+import Footer from "@/components/Templates/Footer";
+
+
 const LandingPage = () => {
   
   return (
     <>
+
       <header className="flex w-screen h-screen items-center justify-center">
         <CarouselComponent />
       </header>
+
+      <Streamlined />
+      <FAQs />
+      <Footer />
+
     </>
   );
 };
