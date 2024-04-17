@@ -42,25 +42,25 @@ const Navbar = () => {
 
         {/* for mob nav */}
         <ul
-          className={`md:hidden font-Inter font-extrabold bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4 duration-500 ${open ? "left-0" : "left-[-100%]"}`}
+          className={`md:hidden z-10 pl-10 pr-10 font-Inter font-semibold bg-white fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4 duration-500 ${open ? "left-0" : "left-[-100%]"}`}
         >
-          <li>
+          <li className="flex item-center">
             <Link to="/" className="py-7 px-3 inline-block">
               Home
             </Link>
           </li>
           <NavLinks />
-          <li>
+          <li className="flex item-center">
             <Link to="/" className="py-7 px-3 inline-block">
               About
             </Link>
           </li>
-          <li>
+          <li className="flex item-center">
             <Link to="/" className="py-7 px-3 inline-block">
               FAQs
             </Link>
           </li>
-          <div className="py-5 border-inherit flex align-center justify-center">
+          <div className="py-5 border-inherit flex align-center justify-center font-bold">
             <Button />
           </div>
         </ul>

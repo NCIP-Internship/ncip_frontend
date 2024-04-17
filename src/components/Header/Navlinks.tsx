@@ -30,7 +30,7 @@ const NavLinks = () => {
 
             {link.submenu && link.sublinks && (
               <div>
-                <div className="absolute top-20 hidden group-hover:md:block hover:md:block">
+                <div className="absolute top-20 z-50 hidden group-hover:md:block hover:md:block">
                   <div className="py-3">
                     <div className="w-4 h-4 left-3 absolute mt-1 bg-white rotate-45"></div>
                   </div>
