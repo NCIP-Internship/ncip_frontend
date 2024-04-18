@@ -47,17 +47,17 @@ const carouselData = [
 const CarouselDiv = ({ imagePath, index, title, subText, btnLabel}: {imagePath: string, index: number, title: string, subText: string, btnLabel: string}) => {
   return (
     <div style={{ backgroundImage: `url('${imagePath}` }} className="w-full h-screen bg-cover bg-center">
-          <div className={index === 3 ? "flex items-center justify-center p-6 h-full" : "grid grid-cols-2 p-6"}
+          <div className={index === 3 ? "flex items-center justify-center p-6 h-full" : "md:grid flex md:grid-cols-2 p-6 h-full"}
 >
-            <div className="flex flex-col justify-center items-center ">
-              <div className="flex items-center gap-5 my-5">
+            <div className="flex flex-col justify-center items-center h-full">
+              <div className="flex items-center gap-5 my-2 md:my-5">
                 <img src="/landing-page-assets/image 6.png" alt="logo" className="w-14 h-14" />
-                <h3 className=" text-white scroll-m-20 text-2xl font-semibold tracking-tight text-center">
+                <h3 className=" text-white scroll-m-20 text-base md:text-2xl font-semibold tracking-tight text-center">
                 National Commission of Indigenous Peoples
                 </h3>
               </div>
 
-              <div className="flex flex-col items-center justify-center my-32">
+              <div className="flex flex-col items-center justify-center my-16 md:my-32">
                 <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-white">
                   {title}
                 </h1>
