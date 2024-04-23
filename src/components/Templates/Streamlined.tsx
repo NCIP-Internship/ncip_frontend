@@ -32,7 +32,7 @@ export default function Streamlined() {
   const imgStyle = "max-h-52 lg:max-h-64 xl:max-h-fit";
   return (
     <>
-      <div className="w-full flex flex-col gapGOVPH-2 my-8">
+      <div className="w-full flex flex-col gap-2 my-14">
         <h3 className="text-xl md:text-2xl font-semibold">LEARN ABOUT OUR</h3>
         <h1 className="text-2xl md:text-4xl font-semibold">
           STREAMLINED PROCESS

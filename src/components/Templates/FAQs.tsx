@@ -18,7 +18,7 @@ export default function FAQs() {
 
   return (
     <>
-      <div className="flex flex-col gap-4 my-8">
+      <div className="flex flex-col gap-4 my-14">
         <h1 className="text-4xl font-semibold">Frequently Asked Questions</h1>
         <p className="text-black font-regular text-lg text-center px-6">
           Find quick answers to common queries about our servicer, process and
