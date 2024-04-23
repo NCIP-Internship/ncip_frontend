@@ -1,15 +1,16 @@
+import Ipgroup from "../components/Ipgroup";
+import NcipLogo from "../components/NcipLogo";
+
 const LandingPage = () => {
   return (
     <>
-      <h1
-        className="font-bold text-xl md:text-2xl lg:text-3xl
-      tracking-wide"
-      >
-        Vite + React + TypeScript + Tailwindcss
+      <h1 className="text-4xl mb-8 float-left">
+        Indigenous Culture Communities/Indigenous Peoples(ICCs/IPs)
       </h1>
-      <p className="tracking-wide mt-2 text-base md:text-xl text-gray-400">
-        react-router-dom + ts path configuration
-      </p>
+      <div className="container mx-auto flex">
+        <Ipgroup />
+        <NcipLogo></NcipLogo>
+      </div>
     </>
   );
 };
