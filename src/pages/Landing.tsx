@@ -14,6 +14,7 @@ import { Button } from "@/components/ui/button";
 import FAQs from "@/components/Templates/FAQs";
 import Streamlined from "@/components/Templates/Streamlined";
 import Footer from "@/components/Templates/Footer";
+import About from "@/components/Templates/About";
 
 const LandingPage = () => {
   return (
@@ -24,9 +25,12 @@ const LandingPage = () => {
         <CarouselComponent />
       </header>
 
-      <Streamlined />
-      <FAQs />
-      <Footer />
+      <section className="w-full h-full">
+        <Streamlined />
+        <About />
+        <FAQs />
+        <Footer />
+      </section>
     </>
   );
 };
