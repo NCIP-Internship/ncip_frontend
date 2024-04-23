@@ -29,7 +29,7 @@ export default function FAQs() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 w-[90%] lg:grid-cols-3 gap-8 mx-auto my-10 px-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] lg:grid-cols-3 gap-8 mx-auto my-10 px-10">
         {Array.from({ length: 6 }).map(() => (
           <>
             <Card title={exampleTitle} paragraph={exampleParagraph} />
