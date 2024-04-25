@@ -14,7 +14,7 @@ export const CocApp = () => {
                 <div className="absolute top-2 left-2">
                     <BookText size={24}/>
                 </div>
-                <div className="absolute bottom-2 left-2 pl-2 pr-2 pb-2">
+                <div className="absolute bottom-2 left-2 pl-2 pr-2 pb-2 border">
                     <h3 className="font-semibold text-blue-500">Step 1</h3>
                     <h1 className="text-xl font-bold">Application and Required Documents</h1>
                 </div>
@@ -62,7 +62,7 @@ export const CocApp = () => {
         </div>
 
             <div className="flex flex-col justify-center items-start pl-20 pr-20 pt-40">
-                <div className="border border-blue-600 border-l-8 rounded-r-lg pl-10 p-4">
+                <div className="border border-blue-600 border-l-8 border-t-0 border-b-0 border-r-0 rounded-r-lg pl-10 p-4">
                     <h1 className="text-2xl font-bold">Step 1 : Application and Required Documents</h1>
                 </div>
                 <h3 className="pl-20 pt-5 pr-4 font-bold">Application and Required Documents. Personal processing of application for COC  issuance shall at all times be required.  The applicant shall complete Index Form-1 and submit the same along with the following  documents/requirements:</h3>
@@ -73,7 +73,7 @@ export const CocApp = () => {
             </div>
 
             <div className="flex flex-col justify-center items-start pl-20 pr-20 pt-20">
-                <div className="border border-blue-600 border-l-8 rounded-r-lg pl-10 p-4">
+                <div className="border border-blue-600 border-l-8 border-t-0 border-b-0 border-r-0 rounded-r-lg pl-10 p-4">
                     <h1 className="text-2xl font-bold">Step 2 :  Issuance of COCs Under Exceptional Circumstances</h1>
                 </div>               
                 <h3 className="pl-20 pt-5 pr-4"> a. Applicants whose immediate family member by descent has a COC previously issued  by NCIP of the same Region, he/she shall only present the said COC together with the  completed application form and the documents under section 8.1 b, 8.1c and 8.1 d  subject for validation and certification from concerned Provincial Office; </h3>
@@ -83,7 +83,7 @@ export const CocApp = () => {
             </div>
 
             <div className="flex flex-col justify-center items-start pl-20 pr-20 pt-20">
-                <div className="border border-blue-600 border-l-8 rounded-r-lg pl-10 p-4">
+                <div className="border border-blue-600 border-l-8 border-t-0 border-b-0 border-r-0 rounded-r-lg pl-10 p-4">
                     <h1 className="text-2xl font-bold">Step 3 : Evaluation </h1>
                 </div>
                 <h3 className="pl-20 pt-5 pr-4 font-bold">Upon receipt of the application and attached documents/requirements,  the COC Focal Person/Committee at the NCIP receiving office shall evaluate the  application within three Upon receipt of the application and attached documents/requirements,  the COC Focal Person/Committee at the NCIP receiving office shall evaluate the  application within three working days to:  working days to:  </h3>
@@ -94,7 +94,7 @@ export const CocApp = () => {
             </div>
 
             <div className="flex flex-col justify-center items-start pl-20 pr-20 pt-20">
-                <div className="border border-blue-600 border-l-8 rounded-r-lg pl-10 p-4">
+                <div className="border border-blue-600 border-l-8 border-t-0 border-b-0 border-r-0 rounded-r-lg pl-10 p-4">
                     <h1 className="text-2xl font-bold">Step 4 : Review and Verification</h1>
                 </div>
                 <h3 className="pl-20 pt-5 pr-4 font-bold">Upon receipt of the favorable endorsement of the COC  Focal Person/Committee, the NCIP CSC Head/Provincial Officer/Regional Director,  as provided for in Section 6 & 7 Part II, shall review the: </h3>
@@ -103,7 +103,7 @@ export const CocApp = () => {
             </div>
 
             <div className="flex flex-col justify-center items-start pl-20 pr-20 pt-20 pb-40">
-                <div className="border border-blue-600 border-l-8 rounded-r-lg pl-10 p-4">
+                <div className="border border-blue-600 border-l-8 border-t-0 border-b-0 border-r-0 rounded-r-lg pl-10 p-4">
                     <h1 className="text-2xl font-bold">Step 5 : Issuance of COC</h1>
                 </div>
                 <h3 className="pl-20 pt-5 pr-4">Upon findings by the CSC Head City/Provincial Officer/Regional  Director, as the case may be, that the application is complete and meritorious, he/she  shall issue a COC within two (2) working days. The COC shall only be released to  the COC applicant or his duly authorized representative.</h3>
