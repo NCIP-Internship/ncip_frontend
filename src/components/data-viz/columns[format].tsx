@@ -1,5 +1,5 @@
 import { ColumnDef } from "@tanstack/react-table";
-import { Data } from "./mock-data";
+import { Data } from "./data[mock]";
 
 import { MoreHorizontal, ArrowUpDown } from "lucide-react";
 
@@ -13,6 +13,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+// TODO: Add/Edit on demand
 export const columns: ColumnDef<Data>[] = [
   {
     header: "Date",

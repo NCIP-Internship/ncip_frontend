@@ -1,15 +1,15 @@
-// Example page to demonstrate how to implement data-table w/ cva
-// Go to route: http://localhost:5173/test/data-viz to see the actual demo
+// DESC: Example page to demonstrate how to implement data-table w/ features: search, sort, and pagination
+// NOTE: Go to route: http://localhost:5173/test/data-viz to see the actual demo
 
-import { columns } from "./columns";
-import DataTable from "./data-table";
-import { data } from "./mock-data";
+import { columns } from "./columns[format]";
+import DataTable from "./data-table[reuse]";
+import { data } from "./data[mock]";
 
 const Example = () => {
   return (
     <>
       <h1 className="text-2xl tracking-tight my-20 font-bold">
-        Testing table component
+        Sample table component
       </h1>
       <div className="mx-32">
         <DataTable columns={columns} data={data} />

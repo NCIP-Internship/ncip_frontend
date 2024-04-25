@@ -1,5 +1,6 @@
 export type Data = (typeof data)[number];
 
+// TODO: Shift to fetch from db
 export const data = [
   {
     date: "08/31/2023",
