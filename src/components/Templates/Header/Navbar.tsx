@@ -96,7 +96,7 @@ const Navbar = () => {
           <li className="hover:font-semibold"><Link to="">FAQs</Link></li>
         </ul>
 
-        <Button variant="outline" className="font-Inter border-2  px-6 py-2 rounded-full text-white bg-white-500 shadow-md hover:text-black hover:bg-white" >Open</Button>   
+        <Button variant="outline" className="font-Inter border-2  px-6 py-2 rounded-full text-white bg-white-500 shadow-md hover:text-black hover:bg-white" >Sign In</Button>   
         
     </nav>
 
