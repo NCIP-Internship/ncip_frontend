@@ -3,7 +3,7 @@ const About = () => {
     <>
       <div
         style={{
-          backgroundImage: "url(/landing-page-assets/about-image.png)",
+          backgroundImage: "url(landing-page-assets/about-image.png)",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "right",
         }}
@@ -26,7 +26,7 @@ const About = () => {
 
         <div className="flex gap-5">
           <img src="logo.png" className="aspect-square w-20 md:w-24" />
-          <img src="logo2.png" className="aspect-square w-20 md:w-24" />
+          <img src="/logo2.png" className="aspect-square w-20 md:w-24" />
         </div>
         {/* <img */}
         {/*   src="/landing-page-assets/about-image.png" */}
