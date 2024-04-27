@@ -10,7 +10,7 @@ const AppRoutes = () => {
 
   const routes = auth ? privateRoutes : publicRoutes;
 
-  const element = useRoutes([common, ...routes]);
+  const element = useRoutes([common, ...routes], { hash: "#" });
 
   return <>{element}</>;
 };
