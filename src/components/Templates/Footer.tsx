@@ -38,7 +38,7 @@ export default function Footer() {
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-center">
-        <img className="h-16 w-16 mx-auto md:mx-0" src="/logo.png" alt="Logo" />
+        <img className="h-16 w-16 mx-auto md:mx-0" src="logo.png" alt="Logo" />
         <p className="text-center md:text-left">
           &copy; 2024 All rights reserved
         </p>
