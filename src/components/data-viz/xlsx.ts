@@ -8,7 +8,7 @@ export const downloadXlsx = () => {
       columns: [
         {
           label: "Date",
-          value: (row) => new Date(row.date).toLocaleDateString(),
+          value: (row) => new Date(row.date as string).toLocaleDateString(),
         },
         { label: "Control No", value: "control_number" },
         { label: "First name", value: "first_name" },
@@ -16,7 +16,8 @@ export const downloadXlsx = () => {
         { label: "Gender", value: "gender" },
         {
           label: "Birth Date",
-          value: (row) => new Date(row.birth_date).toLocaleDateString(),
+          value: (row) =>
+            new Date(row.birth_date as string).toLocaleDateString(),
         },
         { label: "Age", value: "age" },
         { label: "Address", value: "address" },
