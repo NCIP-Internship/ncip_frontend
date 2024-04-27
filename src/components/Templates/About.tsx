@@ -15,7 +15,7 @@ const About = () => {
         </h2>
         <p
           aria-details="about-us"
-          className="tracking-wider  text-xl leading-relaxed md:text-2xl md:mr-[10%] md:leading-relaxed "
+          className="tracking-wider text-xl leading-relaxed md:text-2xl md:mr-[10%] md:leading-relaxed"
         >
           As enabling partner and lead advocate, the NCIP envisions genuinely
           empowered Indigenous Cultural Communities/Indigenous Peoples

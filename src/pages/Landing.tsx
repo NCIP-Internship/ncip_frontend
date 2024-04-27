@@ -89,7 +89,7 @@ const CarouselDiv = ({
         <div className="flex flex-col justify-center items-center h-full ">
           <div className="flex items-center gap-5 my-2 md:my-5">
             <img
-              src="/landing-page-assets/image 6.png"
+              src="landing-page-assets/image 6.png"
               alt="logo"
               className="w-14 h-14"
             />
