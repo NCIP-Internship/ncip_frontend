@@ -1,7 +1,38 @@
+import { cn } from "@/lib/utils";
+import { ReactNode } from "react";
+
+const Card = ({
+  children,
+  order,
+  className,
+}: {
+  children: ReactNode;
+  order: number;
+  className?: string;
+}) => {
+  return (
+    <div
+      className={cn(
+        "flex flex-col  md:flex-row bg-gainsboro gap-10 p-10 w-[80%] m-auto relative justify-between",
+        className,
+      )}
+    >
+      <div
+        className="absolute -top-8 -right-8 lg:-top-10 lg:-right-10 bg-yellow-200 rounded-full h-16 w-16 lg:h-20 lg:w-20 flex 
+        items-center justify-center text-2xl lg:text-4xl text-black"
+      >
+        {order}
+      </div>
+      {children}
+    </div>
+  );
+};
+
 export default function Streamlined() {
+  const imgStyle = "max-h-52 lg:max-h-64 xl:max-h-fit";
   return (
     <>
-      <div className="flex flex-col gap-2 my-8">
+      <div className="w-full flex flex-col gap-2 my-14">
         <h3 className="text-xl md:text-2xl font-semibold">LEARN ABOUT OUR</h3>
         <h1 className="text-2xl md:text-4xl font-semibold">
           STREAMLINED PROCESS
@@ -12,24 +43,21 @@ export default function Streamlined() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-10 md:gap-20 my-8">
-        <div className="flex flex-col md:flex-row bg-gainsboro gap-10 p-10 max-w-sm md:max-w-4xl m-auto relative justify-between">
-          <div className="absolute -top-10 -right-10 bg-yellow-200 rounded-full h-20 w-20 flex items-center justify-center text-4xl text-black">
-            1
-          </div>
+      <div className="flex flex-col gap-10 md:gap-20 my-8 w-full ">
+        <Card order={1}>
           <img
-            className="h-40 w-auto md:h-52"
+            className={imgStyle}
             src="Streamlined 1.png"
             alt="Streamlined 1"
           />
-          <div className="flex flex-col text-left gap-6">
-            <h1 className="text-2xl">COC APPLICATION PROCESS</h1>
-            <p className="text-black text-sm">
+          <div className="flex flex-col text-left gap-6 w-full">
+            <h1 className="text-lg md:text-2xl">COC APPLICATION PROCESS</h1>
+            <p className="text-black text-sm md:text-base lg:text-lg">
               These are the stages of the application for applying the
               Certificate of Confirmation in The National Commission on
               Indigenous Peoples (NCIP)
             </p>
-            <ul className="list-disc ml-6 text-xs">
+            <ul className="list-disc ml-6 text-sm md:text-base lg:text-lg">
               <li>Application and Required Documents</li>
               <li>Issuance of COCs under exceptional circumstances</li>
               <li>Evaluation</li>
@@ -37,55 +65,48 @@ export default function Streamlined() {
               <li>Issuance of COC</li>
             </ul>
           </div>
-        </div>
-
-        <div className="flex flex-col md:flex-row bg-primary gap-10 p-10 max-w-sm md:max-w-4xl m-auto relative justify-between text-white">
-          <div className="absolute -top-5 -left-5 md:-top-10 md:-left-10 bg-yellow-200 rounded-full h-14 w-14 md:h-20 md:w-20 flex items-center justify-center text-4xl text-black">
-            3
-          </div>
+        </Card>
+        <Card className="bg-primary text-white" order={2}>
           <div className="flex flex-col text-left gap-6">
             <h1 className="text-2xl">IPO REGISTRATION PROCESS</h1>
-            <p className="text-white text-sm">
+            <p className="text-white text-sm md:text-base lg:text-lg">
               These are the stages of application for Indigenous People
               Organization in The National Commission on Indigenous Peoples
               (NCIP)
             </p>
-            <ul className="list-disc ml-6 text-xs">
+            <ul className="list-disc ml-6 text-sm md:text-base lg:text-lg">
               <li>Register Application</li>
               <li>Review Application</li>
               <li>Registered IPO</li>
             </ul>
           </div>
           <img
-            className="h-40 w-auto md:h-52"
+            className={imgStyle}
             src="Streamlined 2.png"
             alt="Streamlined 2"
           />
-        </div>
+        </Card>
 
-        <div className="flex flex-col md:flex-row bg-gainsboro gap-10 p-10 max-w-sm md:max-w-4xl m-auto relative justify-between">
-          <div className="absolute -top-5 -right-5 md:-top-10 md:-right-10 bg-yellow-200 rounded-full h-14 w-14 md:h-20 md:w-20 flex items-center justify-center text-4xl text-black">
-            3
-          </div>
+        <Card order={3}>
           <img
-            className="h-40 w-auto md:h-52"
+            className={imgStyle}
             src="Streamlined 3.png"
             alt="Streamlined 3"
           />
           <div className="flex flex-col text-left gap-6">
             <h1 className="text-2xl">IPMR SELECTION PROCESS</h1>
-            <p className="text-black text-sm">
+            <p className="text-black text-sm md:text-base lg:text-lg">
               These are the stages of application for Indigenous People
               Mandatory Representative in The National Commission on Indigenous
               Peoples (NCIP)
             </p>
-            <ul className="list-disc ml-6 text-xs">
+            <ul className="list-disc ml-6 text-sm md:text-base lg:text-lg">
               <li>IPMR Selection</li>
               <li>Review Application</li>
               <li>Selected IPMR</li>
             </ul>
           </div>
-        </div>
+        </Card>
       </div>
     </>
   );
