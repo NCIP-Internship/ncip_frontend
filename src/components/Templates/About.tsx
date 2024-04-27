@@ -3,7 +3,7 @@ const About = () => {
     <>
       <div
         style={{
-          backgroundImage: "url(landing-page-assets/about-image.png)",
+          backgroundImage: "url('landing-page-assets/about-image.png')",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "right",
         }}
