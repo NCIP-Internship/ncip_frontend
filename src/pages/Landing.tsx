@@ -37,7 +37,7 @@ const LandingPage = () => {
 
 const carouselData = [
   {
-    imagePath: "/landing-page-assets/carousel/pexels-vincent-tan-1050824 1.png",
+    imagePath: "landing-page-assets/carousel/pexels-vincent-tan-1050824 1.png",
     index: 1,
     title: "Protect and Promote",
     subText:
@@ -45,14 +45,14 @@ const carouselData = [
     btnLabel: "Apply now",
   },
   {
-    imagePath: "/landing-page-assets/carousel/1522 1.png",
+    imagePath: "landing-page-assets/carousel/1522 1.png",
     index: 2,
     title: "Join Your Tribe",
     subText: "Register Now to Establish your IPO",
     btnLabel: "Register now",
   },
   {
-    imagePath: "/landing-page-assets/carousel/pexels-life-folk-3283193 1.png",
+    imagePath: "landing-page-assets/carousel/pexels-life-folk-3283193 1.png",
     index: 3,
     title: "Indigenous People Mandatory Representatives (IPMR)",
     subText:
