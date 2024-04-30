@@ -11,9 +11,11 @@ const Navbar = () => {
     <nav className="bg-primary">
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
-          <h1 className="text-white font-Inter font-extrabold text-4xl">
-            GOVPH
-          </h1>
+          <Link to="/">
+            <h1 className="text-white font-Inter font-extrabold text-4xl">
+              GOVPH
+            </h1>
+          </Link>
           <div
             className={`${open ? "text-black" : "text-white"} text-3xl md:hidden`}
             onClick={() => setOpen(!open)}
