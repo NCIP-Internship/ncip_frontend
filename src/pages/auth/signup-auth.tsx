@@ -32,6 +32,7 @@ const SignUpAuth = () => {
 
   const onSubmit = async (data: TypeSignUpSchema) => {
     await new Promise((resolve) => setTimeout(resolve, 5000));
+    console.log(data);
     reset();
   };
 

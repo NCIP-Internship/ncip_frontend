@@ -24,6 +24,7 @@ const SignIn = () => {
 
   const onSubmit = async (data: TypeLoginSchema) => {
     await new Promise((resolve) => setTimeout(resolve, 5000));
+    console.log(data);
     reset();
   };
 
