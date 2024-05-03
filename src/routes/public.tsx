@@ -1,6 +1,7 @@
 import Example from "@/components/data-viz/example";
 import PublicPage from "../pages/Public";
 import RootAuth from "@/pages/auth/root-auth";
+import SignUpAuth from "@/pages/auth/signup-auth";
 import SignIn from "@/pages/auth/signin-auth";
 
 export const publicRoutes = [
@@ -13,15 +14,16 @@ export const publicRoutes = [
     element: <Example />,
   },
   {
-    path: "auth",
+    path: "/auth",
+    element: <RootAuth />,
     children: [
       {
         index: true,
-        element: <RootAuth />,
+        element: <SignIn />,
       },
       {
-        path: "signin",
-        element: <SignIn />,
+        path: "signup",
+        element: <SignUpAuth />,
       },
     ],
   },
