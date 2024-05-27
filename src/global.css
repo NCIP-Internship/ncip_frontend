@@ -66,6 +66,11 @@
   }
 }
 
+.clip-path-polygon-shape {
+  clip-path: polygon(50% 0%, 100% 0%, 100% 43%, 100% 96%, 72.1% 91.8%, 51% 87.8%, 15.3% 67%, 0% 32.3%, 0% 0%);
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 60%); */
+}
+
 @layer base {
   * {
     @apply border-border;
