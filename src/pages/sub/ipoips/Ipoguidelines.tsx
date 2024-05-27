@@ -67,9 +67,14 @@ const Ipoguidelines = () => {
         GUIDELINES FOR THE ISSUANCE OF CERTIFICATE OF CONFIRMATION
         </h4>
 
-
-
-
+        <div className="w-full h-screen mt-10">
+          <iframe
+            src="/files/ipoipsguidelines.pdf"
+            width="100%"
+            height="100%"
+            style={{ border: 'none' }}
+          />
+        </div>
 
       </section>
     </>

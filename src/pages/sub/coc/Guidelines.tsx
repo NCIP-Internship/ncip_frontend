@@ -2,7 +2,6 @@ import Navbar from "@/components/Templates/Header/Navbar";
 import { ChevronRight } from "lucide-react";
 import { ReactNode } from "react";
 import React from 'react';
-
 import { ShieldAlert } from "lucide-react";
 
 const StepInformation = ({
@@ -23,7 +22,6 @@ const StepInformation = ({
 };
 
 const Guidelines = () => {
-
   return (
     <>
       <Navbar />
@@ -36,9 +34,9 @@ const Guidelines = () => {
       <div className="bg-white shadow-xl rounded-lg w-full md:w-1/3 mx-auto md:ml-60 absolute top-80 p-10">
         <div className="h-32 w-full text-black border flex flex-col justify-center border-indigo-800 border-b-0 border-t-0 border-l-8 border-r-0">
           <h1 className="text-4xl font-bold">Certificate of Confirmation</h1>
-        </div> 
+        </div>
       </div>
-      
+
       <section className="flex flex-col text-left px-5 md:px-10 lg:px-20 ml-40 mr-40 pb-40">
         <div className="flex items-center mt-10">
           <ShieldAlert color="#d10000" />
@@ -46,14 +44,17 @@ const Guidelines = () => {
         </div>
         <div className="w-1/3 mt-20">
           <ul className="flex justify-around font-semibold text-lg">
-            <li className="flex items-center hover:text-sky-700"> <a href="/coc/application-process">
-              Application Process </a> <ChevronRight size="1em" className="ml-2" />
+            <li className="flex items-center hover:text-sky-700">
+              <a href="/coc/application-process"> Application Process </a>
+              <ChevronRight size="1em" className="ml-2" />
             </li>
-            <li className="flex items-center hover:text-sky-700"> <a href="/coc/requirements">
-              Requirements </a> <ChevronRight size="1em" className="ml-2" />
+            <li className="flex items-center hover:text-sky-700">
+              <a href="/coc/requirements"> Requirements </a>
+              <ChevronRight size="1em" className="ml-2" />
             </li>
-            <li className="flex items-center"> <a href="/coc/guidelines">
-              Guidelines </a> <ChevronRight size="1em" className="ml-2" />
+            <li className="flex items-center">
+              <a href="/coc/guidelines"> Guidelines </a>
+              <ChevronRight size="1em" className="ml-2" />
             </li>
           </ul>
         </div>
@@ -68,6 +69,14 @@ const Guidelines = () => {
           GUIDELINES FOR THE ISSUANCE OF CERTIFICATE OF CONFIRMATION
         </h4>
 
+        <div className="w-full h-screen mt-10">
+          <iframe
+            src="/files/cocguidelines.pdf"
+            width="100%"
+            height="100%"
+            style={{ border: 'none' }}
+          />
+        </div>
       </section>
     </>
   );

@@ -70,6 +70,15 @@ const Ipmrguide= () => {
           2021 Revised National Guidelines for the Mandatory Representation of Indigenous Peoples in Local Legislative Councils and Policy-making Bodies
         </h4>
 
+        <div className="w-full h-screen mt-10">
+          <iframe
+            src="/files/ipmrguidelines.pdf"
+            width="100%"
+            height="100%"
+            style={{ border: 'none' }}
+          />
+        </div>
+
       </section>
     </>
   );

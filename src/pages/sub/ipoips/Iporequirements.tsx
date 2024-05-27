@@ -161,9 +161,13 @@ const Iporequirements = () => {
                 </h3>
         </StepInformation>
 
-        <button className="w-64 flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full mt-20 ml-20">
-              Donwnload Required Documents <SquareArrowDown className="ml-2" />
-        </button>
+        <a
+          href="/files/ipo-application-form.docx"
+          download
+          className="w-64 flex items-center bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-full mt-20 ml-20"
+        >
+          Download Documents <SquareArrowDown className="ml-2" />
+        </a>
 
 
       </section>
