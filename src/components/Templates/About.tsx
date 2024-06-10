@@ -10,12 +10,12 @@ const About = () => {
         className="bg-primary text-white p-[5%] text-left relative md:h-[40rem] flex flex-col justify-evenly gap-10 md:gap-0 "
         aria-details="about-us-container"
       >
-        <h2 aria-details="label" className="font-bold text-2xl md:text-4xl">
+        <h2 aria-details="label" className="font-bold text-2xl md:text-4xl font-primary">
           WHAT WE WANT TO ACHIEVE?
         </h2>
         <p
           aria-details="about-us"
-          className="tracking-wider font-medium text-xl leading-relaxed md:text-2xl md:mr-[10%] md:leading-relaxed "
+          className="tracking-wider font-medium text-xl leading-relaxed md:text-2xl md:mr-[10%] md:leading-relaxed font-primary"
         >
           As enabling partner and lead advocate, the NCIP envisions genuinely
           empowered Indigenous Cultural Communities/Indigenous Peoples

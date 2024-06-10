@@ -3,6 +3,7 @@ import ApplicationProcess from "@/pages/sub/coc/ApplicationProcess";
 import Guidelines from "@/pages/sub/coc/Guidelines";
 import Requirements from "@/pages/sub/coc/Requirements";
 import Ipmrguide from "@/pages/sub/ipmr/Ipmrguidelines";
+import Ipmrprocess from "@/pages/sub/ipmr/Ipmrprocess";
 import Ipmreq from "@/pages/sub/ipmr/ipmrreq";
 import Ipoguidelines from "@/pages/sub/ipoips/Ipoguidelines";
 import Ipoprocess from "@/pages/sub/ipoips/Ipoprocess";
@@ -38,7 +39,7 @@ export const publicRoutes = [
     children: [
       {
         path: "Ipmrprocess",
-        // element: <Ipoprocess />,
+        element: <Ipmrprocess />,
       },
       { path: "Ipmrreq", element: <Ipmreq /> },
       { path: "Ipmrguidelines", element: <Ipmrguide /> },

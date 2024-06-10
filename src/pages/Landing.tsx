@@ -15,6 +15,7 @@ import FAQs from "@/components/Templates/FAQs";
 import Streamlined from "@/components/Templates/Streamlined";
 import Footer from "@/components/Templates/Footer";
 import About from "@/components/Templates/About";
+import Accordion from "@/components/Templates/Accordion";
 
 const LandingPage = () => {
   return (
@@ -28,7 +29,8 @@ const LandingPage = () => {
       <section className="w-full h-full">
         <Streamlined />
         <About />
-        <FAQs />
+        {/* <FAQs /> */}
+        <Accordion/>
         <Footer />
       </section>
     </>

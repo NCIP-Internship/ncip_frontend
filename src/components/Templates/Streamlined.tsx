@@ -13,7 +13,7 @@ const Card = ({
   return (
     <div
       className={cn(
-        "flex flex-col  md:flex-row gap-10 p-10 w-[80%] m-auto relative justify-between",
+        "flex flex-col  md:flex-row gap-10 p-10 w-[80%] m-auto relative justify-evenly",
         className,
       )}
     >
@@ -26,7 +26,7 @@ export default function Streamlined() {
   const imgStyle = "max-h-84 lg:max-h-64 xl:max-h-fit max-w-96 lg:max-w-84";
   return (
     <>
-      <div className="w-full flex flex-col gap-2 my-14">
+      <div className="w-full flex flex-col gap-2 my-14 font-primary">
         <h3 className="text-xl md:text-2xl font-semibold">LEARN ABOUT OUR</h3>
         <h1 className="text-2xl md:text-4xl font-semibold">
           STREAMLINED PROCESS
@@ -37,7 +37,7 @@ export default function Streamlined() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-10 md:gap-20 my-8 w-full ">
+      <div className="flex flex-col gap-10 md:gap-20 my-8 w-full font-primary">
         <Card order={1}>
           <img
             className={imgStyle}

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="bg-primary w-full text-white px-4 md:px-24 py-10">
+    <div className="bg-primary w-full text-white px-4 md:px-24 py-10 font-primary">
       <div className="flex flex-col md:flex-row gap-8 border-b-2 border-gray-400 text-left pb-8 mb-4">
         <div className="flex flex-col gap-2">
           <h1 className="font-semibold">Services</h1>

@@ -24,7 +24,7 @@ export const links = [
       {
         Head: "IPMR",
         sublink: [
-          { name: "Selection Process", link: "/" },
+          { name: "Selection Process", link: "/ipmr/Ipmrprocess" },
           { name: "IPMR Requirements", link: "/ipmr/ipmrreq" },
           { name: "Guidelines", link: "/ipmr/Ipmrguidelines" },
         ],
