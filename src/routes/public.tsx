@@ -26,10 +26,10 @@ export const publicRoutes = [
     path: "/ipoips",
     children: [
       {
-        path: "Ipoprocess",
+        path: "registration_process",
         element: <Ipoprocess />,
       },
-      { path: "Iporequirements", element: <Iporequirements /> },
+      { path: "requirements", element: <Iporequirements /> },
       { path: "Ipoguidelines", element: <Ipoguidelines /> },
     ],
   },
@@ -38,15 +38,15 @@ export const publicRoutes = [
     path: "/ipmr",
     children: [
       {
-        path: "Ipmrprocess",
+        path: "selection_process",
         element: <Ipmrprocess />,
       },
       { path: "Ipmrreq", element: <Ipmreq /> },
-      { path: "Ipmrguidelines", element: <Ipmrguide /> },
+      { path: "guidelines", element: <Ipmrguide /> },
     ],
   },
-  
-  
+
+
   {
     path: "test/data-viz",
     element: <Example />,

@@ -58,9 +58,9 @@ const Navbar = () => {
                 <DropdownMenuPortal>
                   <DropdownMenuSubContent className="ml-2">
 
-                    <DropdownMenuItem><span>Registration Process</span></DropdownMenuItem>
+                    <DropdownMenuItem><Link to="/ipoips/registration_process">Registration Process</Link></DropdownMenuItem>
 
-                    <DropdownMenuItem><span>Requirements</span></DropdownMenuItem>
+                    <DropdownMenuItem><Link to="/ipoips/requirements">Requirements</Link></DropdownMenuItem>
 
                     <DropdownMenuItem><span>Registered IPO</span></DropdownMenuItem>
 
@@ -76,11 +76,11 @@ const Navbar = () => {
                 <DropdownMenuPortal>
                   <DropdownMenuSubContent className="ml-2">
 
-                    <DropdownMenuItem><span>Selection Process</span></DropdownMenuItem>
+                    <DropdownMenuItem><Link to="/ipmr/selection_process">Selection Process</Link></DropdownMenuItem>
 
                     <DropdownMenuItem><span>IPMR List</span></DropdownMenuItem>
 
-                    <DropdownMenuItem><span>Guideline</span></DropdownMenuItem>
+                    <DropdownMenuItem><Link to="/ipmr/guidelines">Guideline</Link></DropdownMenuItem>
 
                   </DropdownMenuSubContent>
                 </DropdownMenuPortal>
