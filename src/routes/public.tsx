@@ -1,4 +1,5 @@
 import Example from "@/components/data-viz/example";
+import DemoApi from "@/pages/demo_api";
 import ApplicationProcess from "@/pages/sub/coc/ApplicationProcess";
 import Guidelines from "@/pages/sub/coc/Guidelines";
 import Requirements from "@/pages/sub/coc/Requirements";
@@ -45,8 +46,11 @@ export const publicRoutes = [
       { path: "guidelines", element: <Ipmrguide /> },
     ],
   },
-
-
+  // NOTE: Testing Purpose Route
+  {
+    path: "demo_api",
+    element: <DemoApi />
+  },
   {
     path: "test/data-viz",
     element: <Example />,
