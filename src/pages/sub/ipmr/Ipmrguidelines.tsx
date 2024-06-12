@@ -1,6 +1,5 @@
 import Navbar from "@/components/Templates/Header/Navbar";
 import { ChevronRight, ShieldAlert } from "lucide-react";
-import React from 'react';
 
 const IpmrGuide = () => {
   return (
@@ -21,8 +20,8 @@ const IpmrGuide = () => {
       <section className="flex flex-col text-left px-5 sm:px-8 md:px-10 lg:px-12 ml-10 sm:ml-20 md:ml-30 lg:ml-40 mr-10 sm:mr-20 md:mr-30 lg:mr-40 pb-20 sm:pb-30 md:pb-40 lg:pb-50 font-primary">
         <div className="flex items-center mt-5 sm:mt-10">
           <ShieldAlert color="#d10000" />
-          <h4 className="ml-2 sm:ml-3 md:ml-4 lg:ml-5 font-medium italic">Note: It is important that you follow all the necessary procedures when applying for an Mandatory Representation of Indigenous 
-          Peoples in Local Legislative Councils and Policy-making Bodies.</h4>
+          <h4 className="ml-2 sm:ml-3 md:ml-4 lg:ml-5 font-medium italic">Note: It is important that you follow all the necessary procedures when applying for an Mandatory Representation of Indigenous
+            Peoples in Local Legislative Councils and Policy-making Bodies.</h4>
         </div>
 
         <div className="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 mt-10 sm:mt-15 md:mt-20">
