@@ -43,10 +43,10 @@ const NavLinks = () => {
 
                         {mysublinks.sublink.map((slink) => (
                           <li
-                            className="text-sm text-gray-600 my-2.5"
+                            className="text-sm text-gray-600 my-2.5 "
                             key={slink.name}
                           >
-                            <Link to={slink.link} className="hover:text-hover">
+                            <Link to={slink.link} className="hover:text-black">
                               {slink.name}
                             </Link>
                           </li>

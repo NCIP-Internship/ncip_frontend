@@ -8,7 +8,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="bg-primary">
+    <nav className="bg-primary font-primary">
       <div className="flex items-center font-medium justify-around">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <Link to="/">

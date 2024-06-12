@@ -53,6 +53,9 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
       },
+      fontFamily: {
+        primary: ['Inter']
+      },
       borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
@@ -75,4 +78,6 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+
+  
 };
