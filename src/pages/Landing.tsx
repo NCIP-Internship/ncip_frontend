@@ -10,17 +10,19 @@ import {
 import { useRef } from "react"
 import Autoplay from "embla-carousel-autoplay"
 import { Button } from "@/components/ui/button";
+import Adminav from "@/components/Templates/Adminav";
 
-import FAQs from "@/components/Templates/FAQs";
-import Streamlined from "@/components/Templates/Streamlined";
-import Footer from "@/components/Templates/Footer";
+// import FAQs from "@/components/Templates/FAQs";
+// import Streamlined from "@/components/Templates/Streamlined";
+// import Footer from "@/components/Templates/Footer";
 
 
 const LandingPage = () => {
   
   return (
     <>
-    <Navbar />
+    <Adminav/>
+    {/* <Navbar />
 
       <header className="flex w-screen h-screen items-center justify-center">
         <CarouselComponent />
@@ -28,7 +30,7 @@ const LandingPage = () => {
 
       <Streamlined />
       <FAQs />
-      <Footer />
+      <Footer /> */}
 
     </>
   );
