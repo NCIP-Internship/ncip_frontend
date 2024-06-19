@@ -1,5 +1,6 @@
 import Example from "@/components/data-viz/example";
 import DemoApi from "@/pages/demo_api";
+import DemoForm from "@/pages/demo_form";
 import ApplicationProcess from "@/pages/sub/coc/ApplicationProcess";
 import Guidelines from "@/pages/sub/coc/Guidelines";
 import Requirements from "@/pages/sub/coc/Requirements";
@@ -50,6 +51,10 @@ export const publicRoutes = [
   {
     path: "demo_api",
     element: <DemoApi />
+  },
+  {
+    path: "demo_form",
+    element: <DemoForm />
   },
   {
     path: "test/data-viz",

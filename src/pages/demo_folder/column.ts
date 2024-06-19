@@ -1,4 +1,3 @@
-import { columns } from "@/components/data-viz/columns[format]";
 import { ColumnDef } from "@tanstack/react-table";
 
 const DemoColumn: ColumnDef<COC>[] = [

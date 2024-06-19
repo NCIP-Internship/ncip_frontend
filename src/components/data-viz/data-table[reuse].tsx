@@ -130,9 +130,9 @@ export const DataTable = <TData, TValue>({
                       {header.isPlaceholder
                         ? null
                         : flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
                     </TableHead>
                   );
                 })}
@@ -145,6 +145,7 @@ export const DataTable = <TData, TValue>({
                 <TableRow
                   key={row.id}
                   data-state={row.getIsSelected() && "selected"}
+                  className="text-left"
                 >
                   {row.getVisibleCells().map((cell) => (
                     <TableCell key={cell.id}>
