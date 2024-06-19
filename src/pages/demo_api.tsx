@@ -6,21 +6,12 @@ const DemoApi = () => {
   const [data, setData] = useState<COC[]>([])
 
   useEffect(() => {
-
-
     (async () => {
-
       const res = await fetch("http://localhost:8000/api/coc", {
         method: "GET"
       })
-
-
       setData((await res.json()).data)
-
     })()
-
-
-
   }, [])
 
   return (
