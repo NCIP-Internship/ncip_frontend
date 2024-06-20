@@ -4,9 +4,8 @@ import Actions from "./actions";
 
 const accountSchema = z.object({
   id: z.string(),
-  name: z.string().min(1, "Name is required"),
-  email: z.string(),
-  role: z.string(),
+  ipGroup: z.string().min(1, "Group name is required"),
+  region: z.string(),
 });
 
 type Account = z.infer<typeof accountSchema>;
@@ -17,20 +16,17 @@ export const columns: ColumnDef<Account>[] = [
     header: () => <div className="text-center">Account Id</div>,
   },
   {
-    accessorKey: "name",
-    header: () => <div className="text-start">Name</div>,
-    cell: ({ row }) => <div className="text-start">{row.getValue("name")}</div>,
-  },
-  {
-    accessorKey: "role",
-    header: () => <div className="text-start">Role</div>,
-    cell: ({ row }) => <div className="text-start">{row.getValue("role")}</div>,
-  },
-  {
-    accessorKey: "accessibility",
-    header: () => <div className="text-start">Accessibility</div>,
+    accessorKey: "ipGroup",
+    header: () => <div className="text-center">IP Group</div>,
     cell: ({ row }) => (
-      <div className="text-start">{row.getValue("accessibility")}</div>
+      <div className="text-center">{row.getValue("ipGroup")}</div>
+    ),
+  },
+  {
+    accessorKey: "region",
+    header: () => <div className="text-center">Region</div>,
+    cell: ({ row }) => (
+      <div className="text-center">{row.getValue("region")}</div>
     ),
   },
   {

@@ -4,26 +4,26 @@ export const data = [
   {
     id: "1",
     ipGroup: "John Doe",
-    region: "ph",
+    region: "PH",
   },
   {
     id: "2",
     ipGroup: "Jane Doe",
-    region: "ph",
+    region: "PH",
   },
   {
     id: "3",
     ipGroup: "John Smith",
-    region: "ph",
+    region: "PH",
   },
   {
     id: "4",
     ipGroup: "Jane Smith",
-    region: "ph",
+    region: "PH",
   },
   {
     id: "5",
     ipGroup: "John Doe",
-    region: "phR",
+    region: "PH",
   },
 ];

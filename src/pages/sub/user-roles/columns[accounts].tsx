@@ -5,8 +5,8 @@ import Actions from "./actions";
 const accountSchema = z.object({
   id: z.string(),
   name: z.string().min(1, "Name is required"),
-  email: z.string(),
   role: z.string(),
+  accessibility: z.string(),
 });
 
 type Account = z.infer<typeof accountSchema>;

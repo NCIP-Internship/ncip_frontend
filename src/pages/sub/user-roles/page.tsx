@@ -11,7 +11,7 @@ const Page: FC<PageProps> = () => {
     <OutletLayout>
       <div className=" h-full">
         <h3 className="font-bold text-start text-2xl">User Privileges</h3>
-        <DataTable columns={columns} data={data} />
+        <DataTable columns={columns} data={data} add="role" />
       </div>
     </OutletLayout>
   );

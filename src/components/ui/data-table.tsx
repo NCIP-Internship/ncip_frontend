@@ -31,11 +31,13 @@ import {
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
   data: TData[];
+  add: string;
 }
 
 export function DataTable<TData, TValue>({
   columns,
   data,
+  add,
 }: DataTableProps<TData, TValue>) {
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
 
@@ -70,7 +72,7 @@ export function DataTable<TData, TValue>({
               className="flex gap-2 justify-center items-center mr-3  "
             >
               <PlusCircle size={17} />
-              New Account
+              New {new String(add).toLowerCase()}
             </Button>
           </DialogTrigger>
           <DialogContent>
