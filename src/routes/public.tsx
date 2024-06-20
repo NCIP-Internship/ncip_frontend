@@ -1,4 +1,5 @@
 import Example from "@/components/data-viz/example";
+import Homepage from "@/pages/Homepage";
 import DemoApi from "@/pages/demo_api";
 import DemoForm from "@/pages/demo_form";
 import ApplicationProcess from "@/pages/sub/coc/ApplicationProcess";
@@ -13,17 +14,20 @@ import Iporequirements from "@/pages/sub/ipoips/Iporequirements";
 
 export const publicRoutes = [
   {
+    index: true,
+    element: <Homepage />
+  },
+  {
     path: "/coc",
     children: [
       {
-        path: "application-process",
+        path: "application_process",
         element: <ApplicationProcess />,
       },
       { path: "requirements", element: <Requirements /> },
       { path: "guidelines", element: <Guidelines /> },
     ],
   },
-
   {
     path: "/ipoips",
     children: [

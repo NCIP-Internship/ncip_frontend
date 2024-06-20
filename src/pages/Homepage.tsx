@@ -1,5 +1,3 @@
-import Navbar from "@/components/Templates/Header/Navbar";
-
 import {
   Carousel,
   CarouselContent,
@@ -19,13 +17,11 @@ import FAQ from "@/components/Templates/FAQ";
 const Homepage = () => {
   return (
     <>
-      <Navbar />
-
-      <header className="flex w-screen h-screen items-center justify-center">
+      <header className="flex h-screen items-center justify-center">
         <CarouselComponent />
       </header>
 
-      <section className="w-full h-full">
+      <section>
         <Streamlined />
         <About />
         <FAQ />
@@ -77,7 +73,7 @@ const CarouselDiv = ({
   return (
     <div
       style={{ backgroundImage: `url('${imagePath}` }}
-      className="w-full h-screen bg-cover bg-center"
+      className="h-screen bg-cover bg-center"
     >
       <div
         className={
