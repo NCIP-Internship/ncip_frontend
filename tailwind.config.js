@@ -54,7 +54,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        primary: ['Inter']
+        primary: ["Inter"],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -78,6 +78,5 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-
-  
 };
+
