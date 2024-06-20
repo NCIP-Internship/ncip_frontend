@@ -15,6 +15,7 @@ import Streamlined from "@/components/Templates/Streamlined";
 import Footer from "@/components/Templates/Footer";
 import About from "@/components/Templates/About";
 import Accordion from "@/components/Templates/Accordion";
+import Cocform from "./cocform";
 
 const LandingPage = () => {
   return (
@@ -27,6 +28,7 @@ const LandingPage = () => {
 
       <section className="w-full h-full">
         <Streamlined />
+        <Cocform/>
         <About />
         <Accordion />
         <Footer />
