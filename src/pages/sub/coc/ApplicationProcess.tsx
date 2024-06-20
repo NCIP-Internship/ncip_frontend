@@ -1,4 +1,3 @@
-import Navbar from "@/components/Templates/Header/Navbar";
 import {
   BookText,
   Activity,
@@ -59,37 +58,36 @@ const cardData: Array<{
   title: string;
   description: string;
 }> = [
-  {
-    Icon: <BookText size={24} />,
-    title: "Step 1",
-    description: "Application and Required Documents",
-  },
-  {
-    Icon: <Activity size={24} />,
-    title: "Step 2",
-    description: "Exceptional Circumstances",
-  },
-  {
-    Icon: <User size={24} />,
-    title: "Step 3",
-    description: "Evaluation",
-  },
-  {
-    Icon: <Target size={24} />,
-    title: "Step 4",
-    description: "Review and Verification",
-  },
-  {
-    Icon: <ShieldCheck size={24} />,
-    title: "Step 5",
-    description: "Issuance of COC",
-  },
-];
+    {
+      Icon: <BookText size={24} />,
+      title: "Step 1",
+      description: "Application and Required Documents",
+    },
+    {
+      Icon: <Activity size={24} />,
+      title: "Step 2",
+      description: "Exceptional Circumstances",
+    },
+    {
+      Icon: <User size={24} />,
+      title: "Step 3",
+      description: "Evaluation",
+    },
+    {
+      Icon: <Target size={24} />,
+      title: "Step 4",
+      description: "Review and Verification",
+    },
+    {
+      Icon: <ShieldCheck size={24} />,
+      title: "Step 5",
+      description: "Issuance of COC",
+    },
+  ];
 
 export const ApplicationProcess = () => {
   return (
     <>
-      <Navbar />
       <section className="bg-primary p-5 sm:p-8 md:p-10 flex justify-end items-center clip-path-polygon-shape relative">
         <div className="flex items-center flex-row-reverse h-64 sm:h-72 md:h-80 lg:h-96">
           <img className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto mr-2 sm:mr-3 md:mr-4" src="/logo2.png" alt="NCIP" />

@@ -1,5 +1,4 @@
-import Navbar from "@/components/Templates/Header/Navbar";
-import { SquareArrowDown,ChevronRight } from "lucide-react";
+import { SquareArrowDown, ChevronRight } from "lucide-react";
 import {
   ShieldAlert,
 } from "lucide-react";
@@ -8,7 +7,6 @@ import {
 const Ipoguidelines = () => {
   return (
     <>
-      <Navbar />
       <section className="bg-primary p-5 sm:p-8 md:p-10 flex justify-end items-center clip-path-polygon-shape relative">
         <div className="flex items-center flex-row-reverse h-64 sm:h-72 md:h-80 lg:h-96">
           <img className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto mr-2 sm:mr-3 md:mr-4" src="/logo2.png" alt="NCIP" />
@@ -48,8 +46,8 @@ const Ipoguidelines = () => {
         <h1 className="font-bold text-2xl md:text-3xl lg:text-5xl flex flex-col justify-center items-start pt-12 lg:pt-20 mt-20">Guidelines</h1>
         <h6 className="font-bold text-base md:text-lg flex flex-col justify-center items-center lg:pt-20">NCIP Administrative Order No. 02 Series of 2019</h6>
         <h4 className="font-semibold text-xl md:text-4xl flex flex-col justify-center items-center mt-2"> THE GENERAL GUIDELINES ON THE CONFIRMATION OF INDIGENOUS POLITICAL
-        STRUCTURES AND THE REGISTRATION OF INDIGENOUS PEOPLES’
-        ORGANIZATIONS</h4>
+          STRUCTURES AND THE REGISTRATION OF INDIGENOUS PEOPLES’
+          ORGANIZATIONS</h4>
 
         <div className="w-full h-screen mt-10">
           <iframe
