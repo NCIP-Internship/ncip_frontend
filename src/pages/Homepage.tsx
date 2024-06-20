@@ -14,9 +14,9 @@ import { Button } from "@/components/ui/button";
 import Streamlined from "@/components/Templates/Streamlined";
 import Footer from "@/components/Templates/Footer";
 import About from "@/components/Templates/About";
-import Accordion from "@/components/Templates/Accordion";
+import FAQ from "@/components/Templates/FAQ";
 
-const LandingPage = () => {
+const Homepage = () => {
   return (
     <>
       <Navbar />
@@ -28,7 +28,7 @@ const LandingPage = () => {
       <section className="w-full h-full">
         <Streamlined />
         <About />
-        <Accordion />
+        <FAQ />
         <Footer />
       </section>
     </>
@@ -143,4 +143,4 @@ const CarouselComponent = () => {
   );
 };
 
-export default LandingPage;
+export default Homepage;
