@@ -11,12 +11,15 @@ export default function Cocform() {
           <label htmlFor="dob" className="mt-2 text-xl block text-sm font-medium text-gray-700">Date of Registration</label>
           <input id="dob" type="date" placeholder="Date of Birth" className="p-2 border border-gray-300 rounded-md" />
 
+          <label htmlFor=" issuing_office" className="mt-2 text-xl block text-sm font-medium text-gray-700">Issuing Office</label>
+          <input type="text" id="issuing_office" placeholder="Issuing Office" className="p-2 border border-gray-300 rounded-md" />
+
           <label htmlFor="cn" className="mt-2 text-xl block text-sm font-medium text-gray-700">Control Number</label>
           <input type="text" id="cn" placeholder="Control No" className="p-2 border border-gray-300 rounded-md" />
 
           </div>
 
-          <div className="mb-4 mt-20">
+                <div className="mb-4 mt-20">
                   <label htmlFor="purpose" className="block text-sm font-medium text-gray-700">
                     Purpose
                   </label>
