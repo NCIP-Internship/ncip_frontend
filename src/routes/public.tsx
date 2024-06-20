@@ -3,6 +3,7 @@ import Page from "@/pages/sub/accounts/page";
 import Settings from "@/pages/sub/settings/page";
 import ApplicationProcess from "@/pages/sub/coc/ApplicationProcess";
 import Requirements from "@/pages/sub/coc/Requirements";
+import UserRole from "@/pages/sub/user-roles/page";
 
 export const publicRoutes = [
   {
@@ -26,5 +27,9 @@ export const publicRoutes = [
   {
     path: "test/settings",
     element: <Settings />,
+  },
+  {
+    path: "test/user-roles",
+    element: <UserRole />,
   },
 ];
