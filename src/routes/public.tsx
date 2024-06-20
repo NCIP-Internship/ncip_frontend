@@ -10,20 +10,24 @@ import Ipmreq from "@/pages/sub/ipmr/ipmrreq";
 import Ipoguidelines from "@/pages/sub/ipoips/Ipoguidelines";
 import Ipoprocess from "@/pages/sub/ipoips/Ipoprocess";
 import Iporequirements from "@/pages/sub/ipoips/Iporequirements";
+import Homepage from "@/pages/Homepage";
 
 export const publicRoutes = [
+  {
+    index: true,
+    element: <Homepage />
+  },
   {
     path: "/coc",
     children: [
       {
-        path: "application-process",
+        path: "application_process",
         element: <ApplicationProcess />,
       },
       { path: "requirements", element: <Requirements /> },
       { path: "guidelines", element: <Guidelines /> },
     ],
   },
-
   {
     path: "/ipoips",
     children: [

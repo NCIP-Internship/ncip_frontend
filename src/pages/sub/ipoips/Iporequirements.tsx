@@ -1,4 +1,3 @@
-import Navbar from "@/components/Templates/Header/Navbar";
 import { SquareArrowDown, ChevronRight, ShieldAlert } from "lucide-react";
 import { ReactNode } from "react";
 
@@ -12,7 +11,7 @@ const StepInformation = ({
   return (
     <div className="flex flex-col justify-center items-start pt-16">
       <div className="rounded-r-lg pl-10 p-4">
-      <h1 className="text-xl md:text-2xl font-bold">{title}</h1>
+        <h1 className="text-xl md:text-2xl font-bold">{title}</h1>
       </div>
       {children}
     </div>
@@ -22,7 +21,6 @@ const StepInformation = ({
 const Iporequirements = () => {
   return (
     <>
-      <Navbar />
       <section className="bg-primary p-5 sm:p-8 md:p-10 flex justify-end items-center clip-path-polygon-shape relative">
         <div className="flex items-center flex-row-reverse h-64 sm:h-72 md:h-80 lg:h-96">
           <img className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto mr-2 sm:mr-3 md:mr-4" src="/logo2.png" alt="NCIP" />

@@ -1,5 +1,3 @@
-import Navbar from "@/components/Templates/Header/Navbar";
-
 import {
   Carousel,
   CarouselContent,
@@ -14,21 +12,19 @@ import { Button } from "@/components/ui/button";
 import Streamlined from "@/components/Templates/Streamlined";
 import Footer from "@/components/Templates/Footer";
 import About from "@/components/Templates/About";
-import Accordion from "@/components/Templates/Accordion";
+import FAQ from "@/components/Templates/FAQ";
 
-const LandingPage = () => {
+const Homepage = () => {
   return (
     <>
-      <Navbar />
-
-      <header className="flex w-screen h-screen items-center justify-center">
+      <header className="flex h-screen items-center justify-center">
         <CarouselComponent />
       </header>
 
-      <section className="w-full h-full">
+      <section>
         <Streamlined />
         <About />
-        <Accordion />
+        <FAQ />
         <Footer />
       </section>
     </>
@@ -77,7 +73,7 @@ const CarouselDiv = ({
   return (
     <div
       style={{ backgroundImage: `url('${imagePath}` }}
-      className="w-full h-screen bg-cover bg-center"
+      className="h-screen bg-cover bg-center"
     >
       <div
         className={
@@ -143,4 +139,4 @@ const CarouselComponent = () => {
   );
 };
 
-export default LandingPage;
+export default Homepage;

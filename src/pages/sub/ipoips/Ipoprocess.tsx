@@ -1,4 +1,3 @@
-import Navbar from "@/components/Templates/Header/Navbar";
 import {
   BookText,
   Activity,
@@ -56,32 +55,31 @@ const cardData: Array<{
   title: string;
   description: string;
 }> = [
-  {
-    Icon: <BookText size={24} />,
-    title: "Step 1",
-    description: "Registration and Required Documents",
-  },
-  {
-    Icon: <Activity size={24} />,
-    title: "Step 2",
-    description: "Filing Application",
-  },
-  {
-    Icon: <User size={24} />,
-    title: "Step 3",
-    description: "Verification and Evaluation",
-  },
-  {
-    Icon: <Target size={24} />,
-    title: "Step 4",
-    description: "Issuance and Release",
-  },
-];
+    {
+      Icon: <BookText size={24} />,
+      title: "Step 1",
+      description: "Registration and Required Documents",
+    },
+    {
+      Icon: <Activity size={24} />,
+      title: "Step 2",
+      description: "Filing Application",
+    },
+    {
+      Icon: <User size={24} />,
+      title: "Step 3",
+      description: "Verification and Evaluation",
+    },
+    {
+      Icon: <Target size={24} />,
+      title: "Step 4",
+      description: "Issuance and Release",
+    },
+  ];
 
 export const Ipoprocess = () => {
   return (
     <>
-      <Navbar />
       <section className="bg-primary p-5 sm:p-8 md:p-10 flex justify-end items-center clip-path-polygon-shape relative">
         <div className="flex items-center flex-row-reverse h-64 sm:h-72 md:h-80 lg:h-96">
           <img className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto mr-2 sm:mr-3 md:mr-4" src="/logo2.png" alt="NCIP" />
@@ -145,80 +143,80 @@ export const Ipoprocess = () => {
 
         <StepInformation title="Step 1 : Registration and Required documents">
           <h3 className="pl-20 pt-5 pr-4 font-bold">
-          Notices shall be issued by the 
-          concerned NCIP Regional Office for them to comply with the requirements of this 
-          Guidelines: 
+            Notices shall be issued by the
+            concerned NCIP Regional Office for them to comply with the requirements of this
+            Guidelines:
           </h3>
           <ul className="list-disc pl-20 pt-5 pr-4 ml-10">
-            <li className="pt-2 pr-4 ">The application for confirmation initiated by the IPS itself shall be 
-                filed by the elders/leaders with the nearest NCIP Provincial Office (PO) or the Community 
-                Service Center (CSC) in the absence of a Provincial Office,  supported by the requirements 
-                provided in Section 12 hereof. </li>
-            <li className="pt-2 pr-4 ">IPOs may be organized outside 
-                ancestral domains and can register with the NCIP after compliance with the requirements 
-                provided in this Guidelines. </li>
+            <li className="pt-2 pr-4 ">The application for confirmation initiated by the IPS itself shall be
+              filed by the elders/leaders with the nearest NCIP Provincial Office (PO) or the Community
+              Service Center (CSC) in the absence of a Provincial Office,  supported by the requirements
+              provided in Section 12 hereof. </li>
+            <li className="pt-2 pr-4 ">IPOs may be organized outside
+              ancestral domains and can register with the NCIP after compliance with the requirements
+              provided in this Guidelines. </li>
           </ul>
         </StepInformation>
 
         <StepInformation title="Step 2 : Filing Application">
           <h3 className="pl-20 pt-5 pr-4">
-          Filing of the application registration shall be made with 
-          nearest Provincial Office or Community Service Center in the absence of a Provincial Office. The 
-          authorized representative shall submit three (3) complete and duly accomplished sets, one (1) 
-          original and two (2) duplicate copies. Copies of the application shall be for the applicant IPs, the 
-          concerned CSC, and the OEHR for database and monitoring.
+            Filing of the application registration shall be made with
+            nearest Provincial Office or Community Service Center in the absence of a Provincial Office. The
+            authorized representative shall submit three (3) complete and duly accomplished sets, one (1)
+            original and two (2) duplicate copies. Copies of the application shall be for the applicant IPs, the
+            concerned CSC, and the OEHR for database and monitoring.
           </h3>
         </StepInformation>
 
         <StepInformation title="Step 3 : Verification and Evaluation">
           <h3 className="pl-20 pt-5 pr-4 font-bold">
-          The verification and validation shall be conducted in 
-          the following manner:
+            The verification and validation shall be conducted in
+            the following manner:
           </h3>
           <ul className="list-decimal pl-20 pt-5 pr-4 ml-10">
-            <li className="pt-2 pr-4 "> The application for confirmation of IPS and/or registration of IPO shall be submitted to the 
-                   PO or CSC, which shall immediately furnish a copy to the Regional Office.  It shall conduct 
-                  an evaluation of all submitted requirements within ten (10) days   upon receipt of the 
-                  application. The evaluation is to be conducted by gathering secondary data, interviews or 
-                  other means with the applicant leaders/elders of the IPS and other key informants. 
-                  The evaluation shall serve as basis for an assessment of the authenticity of the application 
-                  and/or for requesting additional requirements and other relevant information to be 
-                  provided by the applicant.
-                  
-                  If assessed to be authentic, the applicant, upon receipt of the assessment shall, with the 
-                  assistance of NCIP, complete all relevant information.  If found to be dubious or 
-                  fraudulent, the NCIP shall deny the application and give notice with an explanation of the 
-                  basis to the applicant. </li>
-            <li className="pt-2 pr-4 ">If necessary, the evaluation shall be followed by the conduct of field-based verification by 
-                   the Verification and Validation Team (VVT), which shall be constituted by the Provincial 
-                   Office or CSC Head. The verification/validation shall be undertaken within fifteen (15) 
-                  days; </li>
-            <li className="pt-2 pr-4 ">After the evaluation or field verification and validation, the VVT shall submit its  report  
-                  with recommendations, if any, to the PO or CSC Head, copy furnished the applicant.  If 
-                  satisfied, the PO or CSC Head shall make his/her endorsement to the RD, through the 
-                  Chief, Technical Management Services Division, copy furnished the Commissioner from 
-                  the Ethnographic Region, for review and appropriate action. 
-                  
-                  If after reviewing the report and the RD finds the same incomplete,  he/she  shall return 
-                  the same to the PO or CSC Head,  as the case may be,  for completion.  If he/she finds the 
-                   application fraudulent, he/she shall endorse the same to the Regional Attorney for 
-                  investigation and recommendation.</li>
-            <li className="pt-2 pr-4 ">In the case of the Registration of IPOs,  the RD shall  review the report and if he/she finds 
-                  the same to be meritorious, a COR  shall be issued to the applicant IPO and copies 
-                  furnished to the Commission through the OEHR</li>
-            <li className="pt-2 pr-4 "> In the case of an application of an IPS for Confirmation, the RD shall review the report and 
-                  after finding the same to be meritorious, with the concurrence of the Commissioner from 
-                  the Ethnographic Region, he/she shall endorse the same to the NCIP, through the OEHR, 
-                  for appropriate action.</li>
+            <li className="pt-2 pr-4 "> The application for confirmation of IPS and/or registration of IPO shall be submitted to the
+              PO or CSC, which shall immediately furnish a copy to the Regional Office.  It shall conduct
+              an evaluation of all submitted requirements within ten (10) days   upon receipt of the
+              application. The evaluation is to be conducted by gathering secondary data, interviews or
+              other means with the applicant leaders/elders of the IPS and other key informants.
+              The evaluation shall serve as basis for an assessment of the authenticity of the application
+              and/or for requesting additional requirements and other relevant information to be
+              provided by the applicant.
+
+              If assessed to be authentic, the applicant, upon receipt of the assessment shall, with the
+              assistance of NCIP, complete all relevant information.  If found to be dubious or
+              fraudulent, the NCIP shall deny the application and give notice with an explanation of the
+              basis to the applicant. </li>
+            <li className="pt-2 pr-4 ">If necessary, the evaluation shall be followed by the conduct of field-based verification by
+              the Verification and Validation Team (VVT), which shall be constituted by the Provincial
+              Office or CSC Head. The verification/validation shall be undertaken within fifteen (15)
+              days; </li>
+            <li className="pt-2 pr-4 ">After the evaluation or field verification and validation, the VVT shall submit its  report
+              with recommendations, if any, to the PO or CSC Head, copy furnished the applicant.  If
+              satisfied, the PO or CSC Head shall make his/her endorsement to the RD, through the
+              Chief, Technical Management Services Division, copy furnished the Commissioner from
+              the Ethnographic Region, for review and appropriate action.
+
+              If after reviewing the report and the RD finds the same incomplete,  he/she  shall return
+              the same to the PO or CSC Head,  as the case may be,  for completion.  If he/she finds the
+              application fraudulent, he/she shall endorse the same to the Regional Attorney for
+              investigation and recommendation.</li>
+            <li className="pt-2 pr-4 ">In the case of the Registration of IPOs,  the RD shall  review the report and if he/she finds
+              the same to be meritorious, a COR  shall be issued to the applicant IPO and copies
+              furnished to the Commission through the OEHR</li>
+            <li className="pt-2 pr-4 "> In the case of an application of an IPS for Confirmation, the RD shall review the report and
+              after finding the same to be meritorious, with the concurrence of the Commissioner from
+              the Ethnographic Region, he/she shall endorse the same to the NCIP, through the OEHR,
+              for appropriate action.</li>
           </ul>
         </StepInformation>
 
         <StepInformation title="Ste 4 : Issuance and Release">
           <h3 className="pl-20 pt-5 pr-4">
-          Issuance and Release of En Banc Resolution and Certificate of Confirmation.   
-          The En Banc Resolution and Certificate of Confirmation shall be issued, through the OEHR, to 
-          the applicant IPS and copies thereof be furnished to the concerned offices. 
-           </h3>
+            Issuance and Release of En Banc Resolution and Certificate of Confirmation.
+            The En Banc Resolution and Certificate of Confirmation shall be issued, through the OEHR, to
+            the applicant IPS and copies thereof be furnished to the concerned offices.
+          </h3>
         </StepInformation>
 
       </section>
