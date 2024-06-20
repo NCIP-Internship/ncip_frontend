@@ -1,5 +1,4 @@
 import Example from "@/components/data-viz/example";
-import Homepage from "@/pages/Homepage";
 import DemoApi from "@/pages/demo_api";
 import DemoForm from "@/pages/demo_form";
 import ApplicationProcess from "@/pages/sub/coc/ApplicationProcess";
@@ -11,6 +10,7 @@ import Ipmreq from "@/pages/sub/ipmr/ipmrreq";
 import Ipoguidelines from "@/pages/sub/ipoips/Ipoguidelines";
 import Ipoprocess from "@/pages/sub/ipoips/Ipoprocess";
 import Iporequirements from "@/pages/sub/ipoips/Iporequirements";
+import Homepage from "@/pages/Homepage";
 
 export const publicRoutes = [
   {
