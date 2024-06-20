@@ -10,6 +10,7 @@ import Ipmreq from "@/pages/sub/ipmr/ipmrreq";
 import Ipoguidelines from "@/pages/sub/ipoips/Ipoguidelines";
 import Ipoprocess from "@/pages/sub/ipoips/Ipoprocess";
 import Iporequirements from "@/pages/sub/ipoips/Iporequirements";
+import Ipgroup from "@/pages/ipgroup/index";
 
 export const publicRoutes = [
   {
@@ -37,6 +38,16 @@ export const publicRoutes = [
   },
 
   {
+    path: "/ipgroup",
+    children: [
+      {
+        path: "ipgroup_list",
+        element: <Ipgroup />,
+      },
+    ],
+  },
+
+  {
     path: "/ipmr",
     children: [
       {
@@ -45,6 +56,16 @@ export const publicRoutes = [
       },
       { path: "Ipmrreq", element: <Ipmreq /> },
       { path: "guidelines", element: <Ipmrguide /> },
+    ],
+  },
+
+  {
+    path: "/ipgroup",
+    children: [
+      {
+        path: "ipgroup",
+        element: <Ipgroup />,
+      },
     ],
   },
   // NOTE: Testing Purpose Route
