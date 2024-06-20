@@ -20,7 +20,7 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="bg-gainsboro h-full py-10 w-72 flex flex-col">
+    <div className="bg-gainsboro h-full py-10 w-72 flex flex-col" style={{ boxShadow: '0 4px 6px rgba(0, 0, 0, 0.6)' }}>
       <div className="flex flex-col text-center items-center mb-8">
         <img src="logo2.png" alt="Logo" className="h-auto w-28" />
         <h2 className="text-lg font-semibold">National Commission of Indigenous Peoples</h2>
