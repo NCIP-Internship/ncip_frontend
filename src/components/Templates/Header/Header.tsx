@@ -28,7 +28,7 @@ const Header = () => {
               <DropdownMenuTrigger asChild>
                 <Link to="#" className="hover:font-semibold">Services</Link>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-56 mt-2 p-2">
+              <DropdownMenuContent className="w-56 mt-2 p-2" align="start">
                 <DropdownMenuLabel className="font-extrabold">Categories</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuSub>
