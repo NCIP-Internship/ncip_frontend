@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../ui/accordion';
 
-const dataCollection = [
+const questionAndAnswer = [
   {
     question: 'What is National Commission on Indigenous Peoples?',
     answer: 'The National Commission on Indigenous Peoples is the agency of the national government of the Philippines that is responsible for protecting the rights of the indigenous peoples of the Philippines. The commission is composed of seven commissioners. It is attached to the Department of Social Welfare and Development.'
@@ -13,22 +13,14 @@ const dataCollection = [
   }, {
     question: 'How is a person classified as Indigenous?',
     answer: 'Indigenous Peoples are distinct social and cultural groups that share collective ancestral ties to the lands and natural resources where they live, occupy or from which they have been displaced.'
-  },{
+  }, {
     question: 'What is the age limit for Napolcom?',
     answer: 'Must weigh not more or less than five kilograms (5.0 kg) from the standard weight corresponding to his/her height, age and sex; and Page 4 of NAPOLCOM MC No. 2021-001 Page 5 1 C 11. Must not be less than twenty-one (21) nor more than thirty (30) years of age..'
   }
 ];
 
-function Accordion() {
-  const [accordion, setActiveAccordion] = useState(-1);
+const FAQ = () => {
 
-  function toggleAccordion(index:number) {
-    if (index === accordion) {
-      setActiveAccordion(-1);
-      return;
-    }
-    setActiveAccordion(index);
-  }
 
   return (
     <>
@@ -36,26 +28,26 @@ function Accordion() {
         <div>
           <span className="text-4xl font-bold text-black pb-5 block">Frequently Asked Questions</span>
           <h1 className="text-xl text-gray-800 mb-8">Find quick answers to common questions about our services, process and
-          more. We’re here to help you understand everything you need.</h1>
+            more. We’re here to help you understand everything you need.</h1>
         </div>
-        <div className="accordion__faq space-y-5">
-          {dataCollection.map((item, index) => (
-            <div key={index} onClick={() => toggleAccordion(index)} className="bg-white p-4 rounded-md shadow cursor-pointer">
-              <div className="flex justify-between items-center">
-                <h3 className={`font-semibold ${accordion === index ? 'text-gray-900' : 'text-gray-500'}`}>{item.question}</h3>
-                <div>
-                  {accordion === index ? <span className="text-xl">-</span> : <span className="text-xl">+</span>}
-                </div>
-              </div>
-              <div>
-                <p className={`transition-all duration-300 pt-5 ${accordion === index ? 'block' : 'hidden'}`}>{item.answer}</p>
-              </div>
-            </div>
+
+        <Accordion type='single' collapsible className='space-y-2'>
+          {questionAndAnswer.map((item, index) => (
+            <AccordionItem value={`question-${index}`} className='px-5 py-2 shadow rounded-md 
+            data-[state=open]:text-black text-gray-500'>
+              <AccordionTrigger>
+                {item.question}
+              </AccordionTrigger>
+              <AccordionContent className='text-left text-base'>
+                {item.answer}
+              </AccordionContent>
+            </AccordionItem>
           ))}
-        </div>
+        </Accordion>
+
       </div>
     </>
   );
 }
 
-export default Accordion;
+export default FAQ;
