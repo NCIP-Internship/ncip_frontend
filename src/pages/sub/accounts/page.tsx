@@ -10,6 +10,7 @@ const Page: FC<PageProps> = () => {
   return (
     <OutletLayout>
       <div className=" h-full">
+        <h3 className="font-bold text-start text-2xl">Accounts</h3>
         <DataTable columns={columns} data={data} />
       </div>
     </OutletLayout>

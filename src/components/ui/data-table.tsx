@@ -19,6 +19,14 @@ import { Input } from "@/components/ui/input";
 import { useState } from "react";
 import { Button } from "./button";
 import { PlusCircle } from "lucide-react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "./dialog";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];
@@ -53,13 +61,25 @@ export function DataTable<TData, TValue>({
           }
           className="max-w-full"
         />
-        <Button
-          variant={"default"}
-          className="flex gap-2 justify-center items-center mr-3  "
-        >
-          <PlusCircle size={17} />
-          New Account
-        </Button>
+
+        <Dialog>
+          <DialogTrigger>
+            {" "}
+            <Button
+              variant={"default"}
+              className="flex gap-2 justify-center items-center mr-3  "
+            >
+              <PlusCircle size={17} />
+              New Account
+            </Button>
+          </DialogTrigger>
+          <DialogContent>
+            <DialogHeader>
+              <DialogTitle>New Account</DialogTitle>
+              <DialogDescription>Enter new user information.</DialogDescription>
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
       </div>
       <div className="rounded-md border">
         <Table>
