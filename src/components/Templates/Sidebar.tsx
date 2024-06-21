@@ -20,7 +20,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="bg-gainsboro h-screen py-10 w-72 sticky top-0 flex flex-col justify-between">
+    <aside className="bg-gainsboro h-screen py-10 w-[21rem] sticky top-0 flex flex-col justify-between">
       <div className="flex flex-col text-center items-center mb-8">
         <img src="/logo2.png" alt="Logo" className="h-auto w-28" />
         <h2 className="text-lg font-semibold">National Commission of Indigenous Peoples</h2>
