@@ -20,7 +20,7 @@ const Sidebar = () => {
   };
 
   return (
-    <aside className="bg-gainsboro h-screen py-10 w-72 flex flex-col justify-between">
+    <aside className="bg-gainsboro h-screen py-10 w-72 sticky top-0 flex flex-col justify-between">
       <div className="flex flex-col text-center items-center mb-8">
         <img src="/logo2.png" alt="Logo" className="h-auto w-28" />
         <h2 className="text-lg font-semibold">National Commission of Indigenous Peoples</h2>
@@ -32,13 +32,13 @@ const Sidebar = () => {
           <ul className="space-y-2">
             <li className="flex items-center">
               <LayoutDashboard size={18} className="mr-2 text-black" />
-              <Link to="/dashboard" className="text-black hover:text-saturated transition duration-300">
+              <Link to="/u/dashboard" className="text-black hover:text-saturated transition duration-300">
                 Dashboard
               </Link>
             </li>
             <li className="flex items-center">
               <CalendarIcon size={18} className="mr-2 text-black" />
-              <Link to="/calendar" className="text-black hover:text-saturated transition duration-300">
+              <Link to="/u/calendar" className="text-black hover:text-saturated transition duration-300">
                 Calendar
               </Link>
             </li>
@@ -59,7 +59,7 @@ const Sidebar = () => {
               {isCocSubMenuOpen && (
                 <ul className="ml-8 space-y-2 text-left">
                   <li>
-                    <Link to="/coc/application-process" className="text-black hover:text-saturated transition duration-300">
+                    <Link to="/u/coc/application_process" className="text-black hover:text-saturated transition duration-300">
                       Application Process
                     </Link>
                   </li>

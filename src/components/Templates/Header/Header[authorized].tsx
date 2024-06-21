@@ -3,7 +3,7 @@ import { DropdownMenuTrigger } from '@radix-ui/react-dropdown-menu';
 
 function HeaderAuthorized() {
   return (
-    <header className="w-full h-[60px] bg-primary text-white flex items-center justify-end px-2 shadow-[0_6px_7px_-3px_rgba(0,0,0,0.35)]">
+    <header className="w-full h-[60px] bg-primary text-white flex items-center justify-end px-2 shadow-[0_6px_7px_-3px_rgba(0,0,0,0.35)] sticky top-0">
 
       <div className='flex items-center gap-2'>
         <div className='text-right'>
