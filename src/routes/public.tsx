@@ -1,18 +1,19 @@
 import Example from "@/components/data-viz/example";
-import DemoApi from "@/pages/demo_api";
-import DemoForm from "@/pages/demo_form";
-import ApplicationProcess from "@/pages/sub/coc/ApplicationProcess";
-import Guidelines from "@/pages/sub/coc/Guidelines";
-import Requirements from "@/pages/sub/coc/Requirements";
-import Ipmrguide from "@/pages/sub/ipmr/Ipmrguidelines";
-import Ipmrprocess from "@/pages/sub/ipmr/Ipmrprocess";
-import Ipmreq from "@/pages/sub/ipmr/ipmrreq";
-import Ipoguidelines from "@/pages/sub/ipoips/Ipoguidelines";
-import Ipoprocess from "@/pages/sub/ipoips/Ipoprocess";
-import Iporequirements from "@/pages/sub/ipoips/Iporequirements";
-import Homepage from "@/pages/Homepage";
+import DemoApi from "@/pages/public/demo_api";
+import DemoForm from "@/pages/public/demo_form";
+import ApplicationProcess from "@/pages/public/sub/coc/ApplicationProcess";
+import Guidelines from "@/pages/public/sub/coc/Guidelines";
+import Requirements from "@/pages/public/sub/coc/Requirements";
+import Ipmrguide from "@/pages/public/sub/ipmr/Ipmrguidelines";
+import Ipmrprocess from "@/pages/public/sub/ipmr/Ipmrprocess";
+import Ipmreq from "@/pages/public/sub/ipmr/ipmrreq";
+import Ipoguidelines from "@/pages/public/sub/ipoips/Ipoguidelines";
+import Ipoprocess from "@/pages/public/sub/ipoips/Ipoprocess";
+import Iporequirements from "@/pages/public/sub/ipoips/Iporequirements";
+import Homepage from "@/pages/public/Homepage";
+import GuessLayout from "@/components/Layout/GuessLayout";
 
-export const publicRoutes = [
+const children = [
   {
     index: true,
     element: <Homepage />
@@ -65,3 +66,11 @@ export const publicRoutes = [
     element: <Example />,
   },
 ];
+
+export const publicRoutes = [
+  {
+    path: '/',
+    element: <GuessLayout />,
+    children: [...children]
+  }
+]
