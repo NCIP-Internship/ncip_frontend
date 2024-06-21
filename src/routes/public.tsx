@@ -12,6 +12,7 @@ import Ipoprocess from "@/pages/public/sub/ipoips/Ipoprocess";
 import Iporequirements from "@/pages/public/sub/ipoips/Iporequirements";
 import Homepage from "@/pages/public/Homepage";
 import GuessLayout from "@/components/Layout/GuessLayout";
+import { Ipgroup } from "@/components/Ipgroup/Ipgroup";
 
 const children = [
   {
@@ -51,6 +52,10 @@ const children = [
       { path: "Ipmrreq", element: <Ipmreq /> },
       { path: "guidelines", element: <Ipmrguide /> },
     ],
+  },
+  {
+    path: 'ipgroup',
+    element: <Ipgroup />
   },
   // NOTE: Testing Purpose Route
   {
