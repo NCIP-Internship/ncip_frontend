@@ -15,6 +15,14 @@ import {
 import HeaderMobile from './Header[mobile]'
 
 const Header = () => {
+  const handleScroll = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+
   return (
     <>
       <nav className="bg-primary sticky top-0 z-50 w-full max-h-24 h-auto p-4 lg:p-8 flex items-center justify-between lg:justify-around">
@@ -67,8 +75,8 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           </li>
-          <li className="hover:font-semibold w-8"><Link to="">About</Link></li>
-          <li className="hover:font-semibold w-8"><Link to="">FAQs</Link></li>
+          <li className="hover:font-semibold w-8"><Link to="#" onClick={() => handleScroll('about')}>About</Link></li>
+          <li className="hover:font-semibold w-8"><Link to="#" onClick={() => handleScroll('faqs')}>FAQs</Link></li>
         </ul>
         <Button
           variant="outline"
