@@ -5,6 +5,7 @@ import ApplicationProcess from "@/pages/sub/coc/ApplicationProcess";
 import Requirements from "@/pages/sub/coc/Requirements";
 import UserRole from "@/pages/sub/user-roles/page";
 import IpGroups from "@/pages/sub/ip-group/page";
+import AccountStatus from "@/pages/sub/coc-account-status/page";
 
 export const publicRoutes = [
   {
@@ -36,5 +37,9 @@ export const publicRoutes = [
   {
     path: "test/ip-group",
     element: <IpGroups />,
+  },
+  {
+    path: "test/status",
+    element: <AccountStatus />,
   },
 ];
