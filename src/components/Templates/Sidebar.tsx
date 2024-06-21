@@ -64,7 +64,7 @@ const Sidebar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/coc/status-of-application" className="text-black hover:text-saturated transition duration-300">
+                    <Link to="/u/coc/application_status" className="text-black hover:text-saturated transition duration-300">
                       Status of Application
                     </Link>
                   </li>
@@ -144,25 +144,25 @@ const Sidebar = () => {
             </li>
             <li className="flex items-center">
               <Users size={18} className="mr-2 text-black" />
-              <Link to="/ip-group" className="text-black hover:text-saturated transition duration-300">
+              <Link to="/u/coc/ip_group" className="text-black hover:text-saturated transition duration-300">
                 IP GROUP
               </Link>
             </li>
             <li className="flex items-center">
               <LockIcon size={18} className="mr-2 text-black" />
-              <Link to="/user-role" className="text-black hover:text-saturated transition duration-300">
+              <Link to="/u/user_roles" className="text-black hover:text-saturated transition duration-300">
                 USER ROLE
               </Link>
             </li>
             <li className="flex items-center">
               <UserCog size={18} className="mr-2 text-black" />
-              <Link to="/account" className="text-black hover:text-saturated transition duration-300">
+              <Link to="/u/accounts" className="text-black hover:text-saturated transition duration-300">
                 ACCOUNT
               </Link>
             </li>
             <li className="flex items-center">
               <Settings size={18} className="mr-2 text-black" />
-              <Link to="/settings" className="text-black hover:text-saturated transition duration-300">
+              <Link to="/u/settings" className="text-black hover:text-saturated transition duration-300">
                 SETTINGS
               </Link>
             </li>
