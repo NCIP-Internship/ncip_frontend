@@ -1,4 +1,4 @@
-import DataTable from "@/components/data-viz/data-table[reuse]";
+import DataTable from "@/components/data-viz(example)/data-table[reuse]";
 import DemoFormColumn from "./demo_folder/form_column";
 import axiosInstance, { fetchCSRF } from "@/lib/axios";
 import { useMutation, useQuery } from "@tanstack/react-query";

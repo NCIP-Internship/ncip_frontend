@@ -1,4 +1,4 @@
-import DataTable from "@/components/data-viz/data-table[reuse]"
+import DataTable from "@/components/data-viz(example)/data-table[reuse]"
 import { useEffect, useState } from "react"
 import DemoColumn from "./demo_folder/column"
 
