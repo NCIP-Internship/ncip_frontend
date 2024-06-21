@@ -71,7 +71,7 @@ const Header = () => {
                     </DropdownMenuSubContent>
                   </DropdownMenuPortal>
                 </DropdownMenuSub>
-                <DropdownMenuItem><span>IP Group</span></DropdownMenuItem>
+                <DropdownMenuItem asChild><Link to='/ipgroup'>IP Group</Link></DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </li>
