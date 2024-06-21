@@ -1,19 +1,16 @@
-import OutletLayout from "@/components/Layout/outletLayout";
 import { DataTable } from "@/components/ui/data-table";
 import { FC } from "react";
 import { columns } from "./columns[accounts]";
 import { data } from "./data[mock]";
 
-interface PageProps {}
+interface PageProps { }
 
 const Page: FC<PageProps> = () => {
   return (
-    <OutletLayout>
-      <div className=" h-full">
-        <h3 className="font-bold text-start text-2xl">IP Groups</h3>
-        <DataTable columns={columns} data={data} add={"Ip group"} />
-      </div>
-    </OutletLayout>
+    <section className="m-20">
+      <h1 className="font-bold text-start text-3xl">IP Groups</h1>
+      <DataTable columns={columns} data={data} add={"Ip group"} />
+    </section>
   );
 };
 
