@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { LayoutDashboard, FileText, CalendarIcon, Users, LockIcon, UserCog, ChevronDown, ChevronUp, Settings } from 'lucide-react';
 
@@ -20,9 +20,9 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="bg-gainsboro h-screen py-10 w-72 flex flex-col justify-between">
+    <aside className="bg-gainsboro h-screen py-10 w-72 flex flex-col justify-between">
       <div className="flex flex-col text-center items-center mb-8">
-        <img src="logo2.png" alt="Logo" className="h-auto w-28" />
+        <img src="/logo2.png" alt="Logo" className="h-auto w-28" />
         <h2 className="text-lg font-semibold">National Commission of Indigenous Peoples</h2>
       </div>
 
@@ -169,7 +169,7 @@ const Sidebar = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 
