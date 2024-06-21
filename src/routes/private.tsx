@@ -1,8 +1,17 @@
-import PrivatePage from "../pages/Private";
+import AuthenticatedLayout from "@/components/Layout/AuthenticatedLayout";
+import Dashboard from "@/pages/private/Dashboard";
+
+const children = [
+  {
+    path: 'dashboard',
+    element: <Dashboard />
+  }
+]
 
 export const privateRoutes = [
   {
-    path: "/private",
-    element: <PrivatePage />,
+    path: "/u",
+    element: <AuthenticatedLayout />,
+    children: [...children]
   },
 ];
