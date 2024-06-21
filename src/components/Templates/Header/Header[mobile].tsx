@@ -129,7 +129,9 @@ const MobileNavbar = () => {
             <Accordion type="single" collapsible>
               <AccordionItem value="services" className="border-none">
                 <AccordionTrigger className="data-[state=open]:font-semibold font-normal text-2xl justify-start gap-1 hover:font-semibold hover:no-underline p-0 m-0 justify-center ml-5">Services</AccordionTrigger>
-                <AccordionContent className="px-6 mt-3 pb-0 flex items-center justify-center">
+                <AccordionContent className="flex-col px-6 mt-3 pb-0 flex items-center justify-center">
+
+
                   <Accordion type="single" collapsible className="space-y-4">
                     {menus.map(menu => (
                       <AccordionItem value={nanoid()} className="border-none">
@@ -138,12 +140,14 @@ const MobileNavbar = () => {
                           {menu.items.map((item) => (
                             <Link to={item.href} className="text-lg hover:font-semibold">{item.label}</Link>
                           ))}
+
                         </AccordionContent>
                       </AccordionItem>
                     ))}
-
-
                   </Accordion>
+                  <li className="hover:font-semibold text-xl mt-2">
+                    <Link to="/ipgroup" >IP Group</Link>
+                  </li>
                 </AccordionContent>
               </AccordionItem>
             </Accordion>

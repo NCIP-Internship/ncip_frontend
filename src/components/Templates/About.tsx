@@ -2,6 +2,7 @@ const About = () => {
   return (
     <>
       <div
+        id="about"
         style={{
           backgroundImage: "url(/landing-page-assets/about-image.png)",
           backgroundRepeat: "no-repeat",
@@ -28,10 +29,6 @@ const About = () => {
           <img src="/logo.png" className="aspect-square w-20 md:w-24" />
           <img src="/logo2.png" className="aspect-square w-20 md:w-24" />
         </div>
-        {/* <img */}
-        {/*   src="/landing-page-assets/about-image.png" */}
-        {/*   className="absolute top-0 right-0 h-[40rem]" */}
-        {/* /> */}
       </div>
     </>
   );
