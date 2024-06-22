@@ -6,6 +6,8 @@ import Requirements from "@/pages/sub/coc/Requirements";
 import UserRole from "@/pages/sub/user-roles/page";
 import IpGroups from "@/pages/sub/ip-group/page";
 import AccountStatus from "@/pages/sub/coc-account-status/page";
+import Notfound from "@/pages/common/not-found";
+import Unauthorized from "@/pages/common/unauthorized";
 
 export const publicRoutes = [
   {
@@ -41,5 +43,13 @@ export const publicRoutes = [
   {
     path: "test/status",
     element: <AccountStatus />,
+  },
+  {
+    path: "*",
+    element: <Notfound />,
+  },
+  {
+    path: "unauthorized",
+    element: <Unauthorized />,
   },
 ];
