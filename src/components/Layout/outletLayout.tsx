@@ -6,7 +6,7 @@ interface OutletLayoutProps {
 
 const OutletLayout: FC<OutletLayoutProps> = ({ children }) => {
   return (
-    <section className="h-full mt-[6rem] ml-[20rem] mr-3">{children}</section>
+    <section className="h-full mt-[6rem] ml-[18rem] mr-3">{children}</section>
   );
 };
 
