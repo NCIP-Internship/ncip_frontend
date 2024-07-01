@@ -9,6 +9,7 @@ import AccountStatus from "@/pages/sub/coc-account-status/page";
 import Notfound from "@/pages/common/not-found";
 import Unauthorized from "@/pages/common/unauthorized";
 import IpoRegister from "@/pages/sub/ipo-registration/page";
+import IpoProcess from "@/pages/sub/ipo-process/page";
 
 export const publicRoutes = [
   {
@@ -56,5 +57,9 @@ export const publicRoutes = [
   {
     path: "test/ipo",
     element: <IpoRegister />,
+  },
+  {
+    path: "test/ipop",
+    element: <IpoProcess />,
   },
 ];
